@@ -2,17 +2,18 @@
 
 <html>
 	<head>
-		<title>ExFrame-Support-Website</title>
+		<title>ExFrame-Website-Support</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="subpage">
+	<body>
 
 		<!-- Header -->
-			<header id="header">
+			<header id="header" class="alt">
 				<div class="logo"><a href="index.html">ExFrame <span>by marquito523</span></a></div>
-				<a href="#menu">Menu</a>
+				<a href="https://discord.com/oauth2/authorize?client_id=733665360188014644&permissions=275901542&scope=bot" class="button">Invite ExFrame Now!</a>
+								<a href="#menu">More</a>
 			</header>
 
 		<!-- Nav -->
@@ -21,8 +22,10 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="generic.html">Commands (current page)</a></li>
 					<li><a href="elements.html">Partners</a></li>
+					<li><a href="outages.html">Outages</a></li>
 				</ul>
 			</nav>
+
 
 		<!-- One -->
 			<section id="One" class="wrapper style3">
@@ -34,273 +37,271 @@
 				</div>
 			</section>
 
-		<!-- Two -->
-			<section id="two" class="wrapper style2">
-				<div class="inner">
-					<div class="box">
-						<div class="content">
-							<header class="align-center">
-
-								<li><a href="https://discord.com/oauth2/authorize?client_id=733665360188014644&permissions=275901542&scope=bot" class="button special">Invite ExFrame Now!</a></li>	<br> <br>			
-
-								<li><a href="https://top.gg/bot/733665360188014644" class="button special">Vote ExFrame Now!</a></li>	
-								
-								<br>
-
-								<p>Explore all possibilites!</p>
-								<h2>ExFrame commands</h2>
-							</header>
-							<p><h1>Music Commands:</h1> <br> <br>
-								Play <br>
-								Use: m!play + [Music URL / Music Title]<br>
-								Does: Plays or adds to the queue a music requested.<br>
-								Requires: You must be in a music channel.
-								<br>
-								<br> 
-								Queue <br>
-								Use: m!queue <br>
-								Does: Shows next music that are going to play.<br>
-								Requires: A music must be playing, and you must be in the music channel.
-								<br>
-								<br> 
-								Shuffle <br>
-								Use: m!shuffle <br>
-								Does: Shuffles the current song playing <br>
-								Requires: A music must be playing, and you must be in the music channel.
-								<br>
-								<br> 
-								Skip <br>
-								Use: m!skip <br>
-								Does: skips the current song <br>
-								Requires: A music must be playing, and you must be in the music channel.
-								<br>
-								<br> 
-								Stop <br>
-								Use: m!stop <br>
-								Does: stops the music and ends the queue <br>
-								Requires: A music must be playing, and you must be in the music channel.
-								<br>
-								<br> 
-								Pause <br>
-								Use: m!pause <br>
-								Does: pauses the current song playing <br>
-								Requires: A music must be playing, and you must be in the music channel, and the music needs to be playing.
-								<br>
-								<br> 
-								resume <br>
-								Use: m!resume <br>
-								Does: resumes the current song playing <br>
-								Requires: A music must be playing, and you must be in the music channel and the music must be paused.
-								<br>
-								<br> 
-								np <br>
-								Use: m!np <br>
-								Does: Shows the current song playing, the length of the song, and other information on it. <br>
-								Requires: A music must be playing, and you must be in the music channel.
-								<br>
-								<br> 
-								clear-queue <br>
-								Use: m!clear-queue <br>
-								Does: clears the current queue. <br>
-								Requires: A music must be playing, and you must be in the music channel.
-								<br>
-								<br> 
-								Debug <br>
-								Use: m!debug <br>
-								Does: Debugs the queue if there was an error. <br>
-								Requires: An error is required in order to use this command.
-								<br>
-								<br> 
-								Volume <br>
-								Use: m!volume <br>
-								Does: Changes the volume of all the songs in the queue, to what is requested.  <br>
-								Requires: A music must be playing, and you must be in the music channel, requested volume needs to be between [1-300]
-								<br>
-								<br>
-								<h1>Moderation Commands:</h1> <br> 
-
-								Kick <br>
-								Use: m!kick + mention member <br>
-								Does: Kicks a member, with or without a reason. <br>
-								Requires: Requires kick members permission, and member to kick under you, and without Administration permissions.
-								<br>
-								<br> 
-								Ban <br>
-								Use: m!ban + mention member <br>
-								Does: Bans a member, with or without a reason. <br>
-								Requires: Requires ban members permission, and member to ban under you, and without Administration permissions.
-								<br>
-								<br> 
-								Warn <br>
-								Use: m!warn + mention user + reason <br>
-								Does: Warns a user <br>
-								Requires: Manage guild or Administration permissions.
-								<br>
-								<br> 
-								Slow Mode <br>
-								Use: m!slow mode + time in seconds <br>
-								Does: Sets slow mode to channel. <br>
-								Requires: Requires Manage guild permissions.
-								<br>
-								<br> 
-								Filter <br>
-								Use: m!enable-filter / m!disable-filter <br>
-								Does: Filters every message, when a swear word is detected, message is deleted, and a warn is sent to the author. <br>
-								Requires: Requires manage guild
-								<br>
-								<br> 
-								Join Message <br>
-								Use: m!join-message + message <br>
-								Does: It will DM that member the message you set, as a welcome. <br>
-								Requires: Requires Manage guild permissions.
-								<br>
-								<br> 
-								Default Role <br>
-								Use:  m!set-default-role + @role <br>
-								Does: Will add that role to any new members that join the server. <br>
-								Requires: Requires Manage guild permissions.
-								<br>
-								<br> 
-								Add Role / Remove Role <br>
-								Use:  m!addrole @role @member/ m!removerole @role @member<br>
-								Does: Will add or removed the role to the member. <br>
-								Requires: Requires Manage Roles permissions.
-								<br>
-								<br> 
-								Change Prefix <br>
-								Use:  m!prefix [new prefix] <br>
-								Does: Will change the prefix to whatever you like. <br>
-								Requires: Requires Manage guild permissions.
-								<br>
-								<br> 
-								Purge <br>
-								Use:  m!purge [amount of message (between 1 and 100)] <br>
-								Does: Deletes a requested amount of messages. <br>
-								Requires: Requires Manage messages permissions.
-								<br>
-								<br> 
-								Join Notification <br>
-								Use:  m!enable-join-notif + #channel <br>
-								Does: Sends a message when a user joined to the channel requested. <br>
-								Requires: Requires Manage guild permissions.
-								<br>
-								<br> 
-								Suggestion Setup <br>
-								Use:  m!setupsuggestion + channel <br>
-								Does: Will set the requested channel as channel for suggestions. <br>
-								Requires: Requires Manage guild permissions.
-								<br>
-								<br> 
-								<h1>Fun Commands:</h1> 
-								<br>
-								<br> 
-								Slap <br>
-								Use:  m!slap + @member <br>
-								Does: Will slap the user you want to. <br>
-								Requires: Nothing
-								<br>
-								<br> 
-								Roll Dice <br>
-								Use:  m!rolldice + excepcted number <br>
-								Does: Will roll the dice and give you a number. If your number matches, you win. <br>
-								Requires: Nothing
-								<br>
-								<br> 
-								Count <br>
-								Use:  m!count <br>
-								Does: First to get to 1000 wins! <br>
-								Requires: Nothing
-								<br>
-								<br> 
-								Game <br>
-								Use:  m!game <br>
-								Does: Will give you a sentance you got rerype as fast as possible. <br>
-								Requires: 1 entrie
-								<br>
-								<br> 
-								Rate <br>
-								Use:  m!rate + @member <br>
-								Does: Will Rate the user you want. <br>
-								Requires: Nothing
-								<br>
-								<br> 
-								ID <br>
-								Use:  m!id + @member <br>
-								Does: Will give you the id of a member. <br>
-								Requires: Nothing
-								<br>
-								<br> 
-								Weather <br>
-								Use:  m!weather + city <br>
-								Does: Will give you the weather in the city you asked for.<br>
-								Requires: Nothing
-								<br>
-								<br> 
-								Money <br>
-								Use:  m!balance <br>
-								Does: Will give your amount of Framits and Entries. <br>
-								Requires: Nothing
-								<br>
-								<br> 
-								<h1>Other Commands:</h1>
-								<br>
-								<br> 
-								Suggestion <br>
-								Use:  m!suggest + suggestion <br>
-								Does: Will suggest something to the owner, or admins. <br>
-								Requires: Nothing
-								<br>
-								<br> 
-								Invite <br>
-								Use:  m!invite <br>
-								Does: Will send you an invite for the bot. <br>
-								Requires: Nothing
-								<br>
-								<br> 
-								Buy <br>
-								Use:  m!buy + article + amount <br>
-								Does: Will purchase the article from the ExFrame Store you want. <br>
-								Requires: Enough Balance for the article
-								<br>
-								<br> 
-								Report <br>
-								Use:  m!report + report/bug <br>
-								Does: Will send a report to marquito523. <br>
-								Requires: To not abuse this.
-								<br>
-								<br> 
-								Info User <br>
-								Use:  m!memberinfo + @member <br>
-								Does: Will give you info on the user. <br>
-								Requires: Nothing
-								<br>
-								<br> 
-								Partners <br>
-								Use:  m!Partners <br>
-								Does: Will send you an invite to partner bots. <br>
-								Requires: Nothing
-								<br>
-								<br> 
-								Bot info <br>
-								Use:  m!bot info <br>
-								Does: Will give you the bot stats. <br>
-								Requires: Nothing
-								<br>
-								<br> 
-								Article List <br>
-								Use:  m!article list <br>
-								Does: Will give you the articles you can buy from the ExFrame Store <br>
-								Requires: SOON
-							</p>
-						</div>
-					</div>
-				</div>
+			<section class="banner full">
+				<article>
+                    <img src="images/ExFrame.jpg" alt="" />
+						<header>
+						</header>
+                    </div>
+                </article>
 			</section>
 
+
+
 		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<ul class="icons">
+		<footer id="footer" style="color:#ffffff">
+			<div class="container" style="color:#ffffff">
+				<ul class="icons">
+						<p style="color:#ffffff">Explore all possibilites!</p>
+						<h2 style="color:#ffffff">ExFrame commands</h2>
+						<a href="moderation.html"class="button">Moderation Commands</a>	
+						<a href="fun.html"class="button">Fun Commands</a>
+						<a href="music.html"class="button">Music Commands</a>
+						<a href="other.html"class="button">Other Commands</a>
+					</header>
+
+					<p><h1 style="color:#f38080">Music Commands:</h1> <br> <br>
+						Play <br>
+						Use: m!play + [Music URL / Music Title]<br>
+						Does: Plays or adds to the queue a music requested.<br>
+						Requires: You must be in a music channel.
+						<br>
+						<br> 
+						Queue <br>
+						Use: m!queue <br>
+						Does: Shows next music that are going to play.<br>
+						Requires: A music must be playing, and you must be in the music channel.
+						<br>
+						<br> 
+						Shuffle <br>
+						Use: m!shuffle <br>
+						Does: Shuffles the current song playing <br>
+						Requires: A music must be playing, and you must be in the music channel.
+						<br>
+						<br> 
+						Skip <br>
+						Use: m!skip <br>
+						Does: skips the current song <br>
+						Requires: A music must be playing, and you must be in the music channel.
+						<br>
+						<br> 
+						Stop <br>
+						Use: m!stop <br>
+						Does: stops the music and ends the queue <br>
+						Requires: A music must be playing, and you must be in the music channel.
+						<br>
+						<br> 
+						Pause <br>
+						Use: m!pause <br>
+						Does: pauses the current song playing <br>
+						Requires: A music must be playing, and you must be in the music channel, and the music needs to be playing.
+						<br>
+						<br> 
+						resume <br>
+						Use: m!resume <br>
+						Does: resumes the current song playing <br>
+						Requires: A music must be playing, and you must be in the music channel and the music must be paused.
+						<br>
+						<br> 
+						np <br>
+						Use: m!np <br>
+						Does: Shows the current song playing, the length of the song, and other information on it. <br>
+						Requires: A music must be playing, and you must be in the music channel.
+						<br>
+						<br> 
+						clear-queue <br>
+						Use: m!clear-queue <br>
+						Does: clears the current queue. <br>
+						Requires: A music must be playing, and you must be in the music channel.
+						<br>
+						<br> 
+						Debug <br>
+						Use: m!debug <br>
+						Does: Debugs the queue if there was an error. <br>
+						Requires: An error is required in order to use this command.
+						<br>
+						<br> 
+						Volume <br>
+						Use: m!volume <br>
+						Does: Changes the volume of all the songs in the queue, to what is requested.  <br>
+						Requires: A music must be playing, and you must be in the music channel, requested volume needs to be between [1-300]
+						<br>
+						<br>
+						<h1 style="color:#f38080">Moderation Commands:</h1> <br> 
+
+						Kick <br>
+						Use: m!kick + mention member <br>
+						Does: Kicks a member, with or without a reason. <br>
+						Requires: Requires kick members permission, and member to kick under you, and without Administration permissions.
+						<br>
+						<br> 
+						Ban <br>
+						Use: m!ban + mention member <br>
+						Does: Bans a member, with or without a reason. <br>
+						Requires: Requires ban members permission, and member to ban under you, and without Administration permissions.
+						<br>
+						<br> 
+						Warn <br>
+						Use: m!warn + mention user + reason <br>
+						Does: Warns a user <br>
+						Requires: Manage guild or Administration permissions.
+						<br>
+						<br> 
+						Slow Mode <br>
+						Use: m!slow mode + time in seconds <br>
+						Does: Sets slow mode to channel. <br>
+						Requires: Requires Manage guild permissions.
+						<br>
+						<br> 
+						Filter <br>
+						Use: m!enable-filter / m!disable-filter <br>
+						Does: Filters every message, when a swear word is detected, message is deleted, and a warn is sent to the author. <br>
+						Requires: Requires manage guild
+						<br>
+						<br> 
+						Join Message <br>
+						Use: m!join-message + message <br>
+						Does: It will DM that member the message you set, as a welcome. <br>
+						Requires: Requires Manage guild permissions.
+						<br>
+						<br> 
+						Default Role <br>
+						Use:  m!set-default-role + @role <br>
+						Does: Will add that role to any new members that join the server. <br>
+						Requires: Requires Manage guild permissions.
+						<br>
+						<br> 
+						Add Role / Remove Role <br>
+						Use:  m!addrole @role @member/ m!removerole @role @member<br>
+						Does: Will add or removed the role to the member. <br>
+						Requires: Requires Manage Roles permissions.
+						<br>
+						<br> 
+						Change Prefix <br>
+						Use:  m!prefix [new prefix] <br>
+						Does: Will change the prefix to whatever you like. <br>
+						Requires: Requires Manage guild permissions.
+						<br>
+						<br> 
+						Purge <br>
+						Use:  m!purge [amount of message (between 1 and 100)] <br>
+						Does: Deletes a requested amount of messages. <br>
+						Requires: Requires Manage messages permissions.
+						<br>
+						<br> 
+						Join Notification <br>
+						Use:  m!enable-join-notif + #channel <br>
+						Does: Sends a message when a user joined to the channel requested. <br>
+						Requires: Requires Manage guild permissions.
+						<br>
+						<br> 
+						Suggestion Setup <br>
+						Use:  m!setupsuggestion + channel <br>
+						Does: Will set the requested channel as channel for suggestions. <br>
+						Requires: Requires Manage guild permissions.
+						<br>
+						<br> 
+						<h1 style="color:#f38080">Fun Commands:</h1> 
+						<br>
+						<br> 
+						Slap <br>
+						Use:  m!slap + @member <br>
+						Does: Will slap the user you want to. <br>
+						Requires: Nothing
+						<br>
+						<br> 
+						Roll Dice <br>
+						Use:  m!rolldice + excepcted number <br>
+						Does: Will roll the dice and give you a number. If your number matches, you win. <br>
+						Requires: Nothing
+						<br>
+						<br> 
+						Count <br>
+						Use:  m!count <br>
+						Does: First to get to 1000 wins! <br>
+						Requires: Nothing
+						<br>
+						<br> 
+						Game <br>
+						Use:  m!game <br>
+						Does: Will give you a sentance you got rerype as fast as possible. <br>
+						Requires: 1 entrie
+						<br>
+						<br> 
+						Rate <br>
+						Use:  m!rate + @member <br>
+						Does: Will Rate the user you want. <br>
+						Requires: Nothing
+						<br>
+						<br> 
+						ID <br>
+						Use:  m!id + @member <br>
+						Does: Will give you the id of a member. <br>
+						Requires: Nothing
+						<br>
+						<br> 
+						Weather <br>
+						Use:  m!weather + city <br>
+						Does: Will give you the weather in the city you asked for.<br>
+						Requires: Nothing
+						<br>
+						<br> 
+						Money <br>
+						Use:  m!balance <br>
+						Does: Will give your amount of Framits and Entries. <br>
+						Requires: Nothing
+						<br>
+						<br> 
+						<h1 style="color:#f38080">Other Commands:</h1>
+						<br>
+						<br> 
+						Suggestion <br>
+						Use:  m!suggest + suggestion <br>
+						Does: Will suggest something to the owner, or admins. <br>
+						Requires: Nothing
+						<br>
+						<br> 
+						Invite <br>
+						Use:  m!invite <br>
+						Does: Will send you an invite for the bot. <br>
+						Requires: Nothing
+						<br>
+						<br> 
+						Buy <br>
+						Use:  m!buy + article + amount <br>
+						Does: Will purchase the article from the ExFrame Store you want. <br>
+						Requires: Enough Balance for the article
+						<br>
+						<br> 
+						Report <br>
+						Use:  m!report + report/bug <br>
+						Does: Will send a report to marquito523. <br>
+						Requires: To not abuse this.
+						<br>
+						<br> 
+						Info User <br>
+						Use:  m!memberinfo + @member <br>
+						Does: Will give you info on the user. <br>
+						Requires: Nothing
+						<br>
+						<br> 
+						Partners <br>
+						Use:  m!Partners <br>
+						Does: Will send you an invite to partner bots. <br>
+						Requires: Nothing
+						<br>
+						<br> 
+						Bot info <br>
+						Use:  m!bot info <br>
+						Does: Will give you the bot stats. <br>
+						Requires: Nothing
+						<br>
+						<br> 
+						Article List <br>
+						Use:  m!article list <br>
+						Does: Will give you the articles you can buy from the ExFrame Store <br>
+						Requires: SOON
+					</p>
 						<li><a href="https://twitter.com/marquoto523" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 						<li><a href="https://www.facebook.com/marco.askovic/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 						<li><a href="https://www.instagram.com/marquitoaskovic/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
