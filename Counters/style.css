@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.counters1 {
+    padding: 40px 20px;
+    color: white;
+}
+
+.counters1 .container1 {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.counter i {
+    margin-bottom: 5px;
+}
+
+.counters1 .counter {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+@media(max-width: 700px) {
+    .counters1 .container1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .counters1 .container1 > div:nth-of-type(1), .counters1 .container1 > div:nth-of-type(2) {
+        border-bottom: 1px;
+        padding-bottom: 20px;
+    }
+}
